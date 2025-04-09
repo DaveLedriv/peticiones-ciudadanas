@@ -1,0 +1,73 @@
+# === General ===
+.DS_Store
+.env
+.env.*
+*.log
+*.sqlite3
+*.py[cod]
+__pycache__/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.idea/
+.vscode/
+.history/
+
+# === Node / React (Frontend) ===
+node_modules/
+build/
+dist/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tgz
+
+# React-specific
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# === Python / FastAPI (Backend) ===
+venv/
+ENV/
+env/
+env.bak/
+.Python
+*.egg
+*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# pytest
+.pytest_cache/
+
+# === Test & Reports ===
+coverage/
+*.lcov
+reports/
+
+# === Docker (opcional, si lo usas) ===
+*.container
+*.pid
+*.sock
+docker-compose.override.yml
