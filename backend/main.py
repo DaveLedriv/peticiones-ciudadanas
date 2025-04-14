@@ -6,16 +6,16 @@ from database import init_db
 app = FastAPI()
 
 # ✅ Middleware CORS: permite acceso desde Vercel y localhost
+from fastapi.middleware.cors import CORSMiddleware
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",                     # desarrollo local
-        "https://tudominio.vercel.app",             # ⚠️ cambia esto por el dominio de tu frontend en Vercel
-    ],
+    allow_origins=["https://peticiones-ciudadanas-mbjkgal0j-david-ledesmas-projects.vercel.app/"],  # Reemplaza con tu dominio real
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.on_event("startup")
 def on_startup():

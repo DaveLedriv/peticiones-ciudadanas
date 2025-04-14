@@ -28,13 +28,14 @@ export default function PeticionForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:8000/peticiones", {
+      const res = await fetch("https://peticiones-backend.onrender.com/peticiones", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(form),
       });
+      
 
       if (!res.ok) throw new Error("Error al enviar la petición");
 
