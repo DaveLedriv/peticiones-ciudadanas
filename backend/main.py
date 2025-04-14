@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://peticiones-ciudadanas-mbjkgal0j-david-ledesmas-projects.vercel.app/"],  # Reemplaza con tu dominio real
+    allow_origins=["https://peticiones-ciudadanas.vercel.app/"],  # Reemplaza con tu dominio real
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
