@@ -71,3 +71,4 @@ reports/
 *.pid
 *.sock
 docker-compose.override.yml
+.env
