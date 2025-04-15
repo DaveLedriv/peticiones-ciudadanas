@@ -16,7 +16,7 @@ export default function Login() {
     setError("");
 
     try {
-      const res = await fetch("https://peticiones-backend.onrender.com/login", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({

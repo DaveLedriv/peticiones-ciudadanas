@@ -28,7 +28,7 @@ export default function PeticionForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://peticiones-backend.onrender.com/peticiones", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/peticiones`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
